@@ -1,6 +1,8 @@
 import { useState, useRef } from 'react';
 import PropTypes from 'prop-types';
 import styles from '../styles/TodoItem.module.css';
+import { FaTrash } from "react-icons/fa";
+import { AiFillEdit } from "react-icons/ai";
 
 const TodoItem = ({
   itemProp, handleChange, delTodo, setUpdate,
@@ -47,14 +49,14 @@ const TodoItem = ({
           className="btn-style"
           onClick={handleEditing}
         >
-          edit
+          <AiFillEdit />
         </button>
         <button
           type="button"
           className="btn-style"
           onClick={() => delTodo(itemProp.id)}
         >
-          delete
+          <FaTrash />
         </button>
       </div>
       <input
