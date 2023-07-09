@@ -4,9 +4,11 @@ import '../styles/TodoApp.css';
 
 function TodoApp() {
   return (
-    <div className="App">
-      <Header />
-      <TodosLogic />
+    <div className="wrapper">
+      <div className="todos">
+        <Header />
+        <TodosLogic />
+      </div>
     </div>
   );
 }

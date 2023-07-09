@@ -34,7 +34,7 @@ const InputTodo = ({ addTodoItem }) => {
           Submit
         </button>
       </form>
-      <div className="message">{message}</div>
+      <div className="submit-warning">{message}</div>
     </>
   );
 };
