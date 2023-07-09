@@ -39,7 +39,8 @@ const TodosLogic = () => {
     setTodos(
       todos.map((todo) => {
         if (todo.id === id) {
-          todo.title = updatedTitle;
+          // todo.title = updatedTitle;
+          return { ...todo, title: updatedTitle };
         }
         return todo;
       }),
