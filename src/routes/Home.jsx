@@ -4,12 +4,12 @@ import '../styles/TodoApp.css';
 
 function Home() {
   return (
-    <div className="wrapper">
-      <div className="todos">
-        <Header />
-        <TodosLogic />
-      </div>
+    // <div className="wrapper">
+    <div className="todos">
+      <Header />
+      <TodosLogic />
     </div>
+    // </div>
   );
 }
 
